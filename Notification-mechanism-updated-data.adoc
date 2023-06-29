@@ -1,0 +1,27 @@
+== Notification mechanism on updated data
+A mechanism of notification for a new version of a data file (e.g. in case published data files need to be replaced) is required to notify users of the availability of updated data. The idea is to identify how users can be notified that a new version (corrective) version of data is published. 
+
+=== Purpose
+The purpose of this notification is to inform customers of the availability of an addition, correction, or amendment to previously relayed files. It also enables data providers to publish corrections and modifications to data previously published
+
+=== Technical requirements
+To enable data providers to publish corrections and amendments to data previously published, the notification message shall include a property as follow:
+-----
+"properties": {
+  …
+  "operation": “create/update/delete “
+   ….
+  }
+
+-----
+*	Operation is by default “create”. It shall be “updated” when updated data (correction, amendment…) are published
+*	If multiple update messages are received, “pubtime” property could be used to identify the last reception.
+
+*Example for updated data*:
+----- 
+"properties": {
+  …
+  "operation": “update “
+   ….
+  }
+-----
