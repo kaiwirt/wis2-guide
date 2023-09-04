@@ -10,7 +10,7 @@ The gateway will be provided by Germany's National Meteorological Service (DWD).
  
 === Technical requirements
 * GTS headers shall be used in the Topic Hierarchy (TH)
-*	The TH for GTS data on the Global Cache (GC) shall be as follows: 
+*	The TH for GTS data on the Global Cache (GC) shall be as follow: 
 ** cache/a/wis2/xxg/gts_to_wis2_GC-name/TTAAii
 ** e.g for DWD: cache/a/wis2/xxg/gts_to_wis2_dwd/TTAAii
 
